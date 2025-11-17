@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Simple Chat",
+  "description": "A simple and beautiful chat application powered by the Gemini API, designed for learning and demonstration purposes on Vercel.",
+  "requestFramePermissions": []
+}
