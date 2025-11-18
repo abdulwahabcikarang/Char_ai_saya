@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect, FormEvent } from 'react';
 import { GoogleGenAI, Chat } from "@google/genai";
 import { Message, Sender } from './types';
@@ -17,10 +16,10 @@ const App: React.FC = () => {
   useEffect(() => {
     const initializeChat = () => {
       try {
-        // Fix: Use process.env.API_KEY as per coding guidelines, which also resolves the TypeScript error.
+        // Fix: Use process.env.API_KEY as per the coding guidelines, which also resolves the TypeScript error.
         const apiKey = process.env.API_KEY;
         if (!apiKey) {
-          setError("API_KEY tidak ditemukan. Harap tambahkan ke Environment Variables Anda.");
+          setError("API_KEY tidak ditemukan. Harap pastikan Environment Variable API_KEY telah diatur.");
           return;
         }
         const ai = new GoogleGenAI({ apiKey });
